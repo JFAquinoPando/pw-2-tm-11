@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+        function inrange(inputstr) {
+            var num = parseInt(inputstr);
+            alert(num);
+            if (Number.isNaN(num)) {
+                alert("Introduzca un valor entero");
+            }
+            else {
+                if (num >= 1 && num <= 30) {
+                    alert("Esta dentro del rango");
+                }
+                else {
+                    alert("Esta fuera del rango");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h2>Validacion de Datos - Rango de numeros</h2>
+    </center>
+    <br><br>
+    <form name="formu">
+        Rango :<input type="text" name="ran" value="">
+        <input type="button" value="Ver" onClick="inrange(formu.ran.value)">
+    </form>
+</body>
+
+</html>
