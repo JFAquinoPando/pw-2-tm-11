@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/ejerc1.js" defer></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="js/sweetalert.js" defer></script>
+    <script src="./js/preguntas.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js" defer></script>
+</head>
+
+<body>
+    <h2 class="center">Validacion de Datos - Rango de numeros</h2>
+    <form name="formu">
+        <label for="rango">Rango :</label>
+        <input id="rango" type="text" name="ran" value="">
+        <input type="button" value="Ver">
+    </form>
+
+
+    <form id="preguntas">
+        <div>
+            <p>
+                ¿Te está gustando el curso?
+            </p>
+        </div>
+        <div class="flex">
+            <div><label for="opcion1">Si</label>
+                <input type="radio" name="opcion" id="opcion1">
+            </div>
+            <div><label for="opcion2">No</label>
+                <input type="radio" name="opcion" id="opcion2">
+            </div>
+            <div><label for="opcion3">Vamos peleando...</label>
+                <input type="radio" name="opcion" id="opcion3">
+            </div>
+        </div>
+    </form>
+    <div id="respuesta"></div>
+</body>
+
+</html>
