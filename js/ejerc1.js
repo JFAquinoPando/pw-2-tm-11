@@ -29,11 +29,8 @@ function inrange(inputstr) {
     }
 }
 
-let btnRango = document.querySelector("input[type='button']")
-console.info(btnRango);
-if (btnRango !== null) {
-    btnRango.addEventListener("click", function () {
-        let rango = document.querySelector("#rango").value
+function ocurrir() {
+    let rango = document.querySelector("#rango").value
         swal.fire('Numero!',
         rango,
         'success').then(
@@ -41,5 +38,18 @@ if (btnRango !== null) {
                 inrange(rango)
             }
         )
+}
+
+let btnRango = document.querySelector("input[type='button']")
+let formu = document.querySelector("form[name='formu']")
+console.info(btnRango);
+if (btnRango !== null) {
+    btnRango.addEventListener("click", function () {
+        ocurrir()
+    })
+    formu.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+        console.log("se previene el evento por defecto");
+        ocurrir()
     })
 }
